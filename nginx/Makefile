@@ -35,3 +35,6 @@ alpine-qeek-ffmpeg-run:
 
 push-image-alpine-qeek-ffmpeg:
 	docker push ${BUILD_IMAGE}:${BUILD_VERSION}-alpine-qeek-ffmpeg
+
+alpine-qeek-ffmpe-save:
+	docker save "${BUILD_IMAGE}:${BUILD_VERSION}-alpine-qeek-ffmpeg" | gzip > dj2-nginx_ffmpeg_vaapi.tgz
