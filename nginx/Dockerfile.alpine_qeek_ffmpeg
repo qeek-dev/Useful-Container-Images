@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-MAINTAINER "Ming-Jui Chen"  <cutedogspark@gmail.com>
+MAINTAINER "qeek-dev"  <qeek-dev@gmail.com>
 
 WORKDIR /tmp
 
@@ -19,8 +19,8 @@ ENV     FFMPEG_VERSION=3.3.2                    \
         FREETYPE_VERSION=2.5.5                  \
         LIBVIDSTAB_VERSION=1.1.0                \
         THEORA_VERSION=1.1.1                    \
-        LIBVA_VERSION=f1a3296d160dbedd695f2712c97fb0dc508785f2                  \
-        INTEL_VAAPI_DRIVER_VERSION=127183b7f528ead9d0f2054277e6da162c6522f2     \
+        LIBVA_VERSION=a4d860b2a27593df152e1fccaca31fa04ec73838                  \
+        INTEL_VAAPI_DRIVER_VERSION=1eddac3e38658169dafd7c0767c2fa34de68d388     \
         PKG_CONFIG_PATH=/usr/local/lib/pkgconfig        \
         SRC=/usr/local                          \
         NGINX_VERSION=1.13.8                    \
