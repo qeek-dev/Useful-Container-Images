@@ -198,9 +198,8 @@ RUN     buildDeps="make \
         --prefix="${SRC}" \
         && make && make install && make distclean && hash -r \
         && cd tools && make qt-faststart && cp qt-faststart ${SRC}/bin \
-        && rm -rf ${DIR}
-
-RUN     echo "[Build] Nginx & RTMP module" && DIR=$(mktemp -d) && cd ${DIR} \
+        && rm -rf ${DIR} \
+        && echo "[Build] Nginx & RTMP module" && DIR=$(mktemp -d) && cd ${DIR} \
         && wget -O nginx-${NGINX_VERSION}.tar.gz https://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz \
         && tar -zxf nginx-${NGINX_VERSION}.tar.gz \
         && wget -O nginx-rtmp-module-${NGINX_RTMP_MODULE_VERSION}.tar.gz https://github.com/cutedogspark/nginx-rtmp-module/archive/v${NGINX_RTMP_MODULE_VERSION}.tar.gz \

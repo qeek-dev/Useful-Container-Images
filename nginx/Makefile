@@ -1,4 +1,4 @@
-BUILD_IMAGE := garychen/nginx
+BUILD_IMAGE := qeekdev/dj2-nginx
 BUILD_VERSION := 1.1.0
 
 CONTAINER_NAME = nginx
